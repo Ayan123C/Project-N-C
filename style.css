@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    /* font-style: 'Poppins'; */
+    background-color: black;
+    overflow-x: hidden;
+}
+
+#head {
+
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+    border-bottom: 10px solid gray;
+
+}
+
+nav {
+    position: relative;
+    z-index: 2;
+    /* width: 95vw; */
+    /* padding: 0px 32px; */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    top: 1rem;
+}
+nav span{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+nav span img {
+    flex-shrink: 2;
+    height: 3rem;
+    opacity: 1;
+    margin: 2px 0 0 2px;
+    opacity: 0.89;
+}
+
+.nav-btn {
+    margin-right: 2rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: none;
+    color: white;
+    border: 1px solid rgb(170, 168, 168);
+}
+
+#sign-in {
+    padding: 6px 20px;
+    background: red;
+    border: none;
+}
+
+.bgimg {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('Assets/bg.jpg');
+    /* background-size: max(1450px, 100vw); */
+    background-position: center center;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+}
+
+.hero {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    height: calc(100% - 58px);
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0 60px;
+    text-align: center;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+}
+
+.hero>:nth-child(1) {
+    font-weight: 900;
+    font-size: 38px;
+}
+
+.hero>:nth-child(2) {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.hero>:nth-child(3) {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.hero-btn {
+    height: 50px;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-btn input {
+    padding: 5px 7rem 5px 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(130, 130, 130);
+    color: white;
+    background-color: rgba(48, 46, 46, 0.609);
+    display: flex;
+    flex-shrink: 1;
+    margin-right: 20px;
+}
+
+.hero-btn input::placeholder {
+    color: white;
+    font-size: 20px;
+}
+
+.hero-btn button {
+    cursor: pointer;
+    padding: 5px 1.5rem 5px 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.hero-btn button:hover {
+    background-color: rgb(220, 16, 16);
+}
+
+
+
+
+.container {
+    /* height: 75vh; */
+    display: flex;
+    flex-direction: row;
+    padding: 0 3rem;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 10px solid gray;
+    gap: 2rem;
+    margin: auto;
+}
+
+
+.text{
+    display: grid;
+    gap: 35px;
+    margin: 15px 0;
+}
+.container div div {
+    /* font-size: large; */
+    color: white;
+    text-align: center;
+}
+
+.font-first {
+    text-align: center;
+    /* margin: 15px;
+    font-size: 2rem; */
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.font-second {
+    text-align: center;
+    font-size: 24px;
+}
+
+.first{
+    position: relative;
+}
+
+
+
+
+.first img {
+    width: 500px;
+    position: relative;
+    z-index: 10;
+}
+
+.first video {
+    position: absolute;
+    top: 80px;
+    right: 34px;
+    width: 400px;
+}
+
+#stranger {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+#stranger-mob-inner {
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;    
+    background-color: #00000094;
+    position: absolute;
+    bottom: 5%;
+    z-index: 10;
+}
+
+#stranger-mob-inner img {
+    width: 2rem;
+    height: 3rem;
+    top: 3px;
+}
+
+#stranger-mob-inner div :nth-child(2) {
+    color: #3b8fe9;
+} 
+
+
+#apple video {
+    top: 10%;
+    left: 20%;
+    width: 300px;
+
+}
+
+#kids img {
+    top: 0;
+}
+
+#faq {
+    flex-direction: column;
+    color: white;
+    padding: 2rem 0;
+    box-sizing: content-box;
+}
+
+
+
+.box {
+    /* border: 1px solid gray; */
+    margin: 0.5rem 1rem;
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #2D2D2D;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: #414141;
+}
+
+#faq .hero span {
+    font-weight: normal;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-column p {
+    font-size: 0.9rem;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    background-color: #222;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 850px) {
+    .container{
+        flex-direction: column;
+    }
+    #stranger-container{
+        flex-direction: column-reverse;
+    }
+    #kids-container{
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+}
